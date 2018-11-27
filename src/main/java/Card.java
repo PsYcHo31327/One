@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public final class Card {
     private enum value {ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, SKIP, REVERSE, DRAW_TWO, DRAW_FOUR, COLOR }
     private enum color {RED, BLUE, GREEN, YELLOW, WILD}
@@ -20,14 +19,5 @@ public final class Card {
 
     public color getCardColor() {
         return cardColor;
-=======
-public class Card {
-    int suit;
-    int face;
-
-    public Card(int suit, int face) {
-        this.suit = suit;
-        this.face = face;
->>>>>>> Outline player class dependencies
     }
 }
