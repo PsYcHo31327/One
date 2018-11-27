@@ -1,4 +1,4 @@
-public class Card {
+public final class Card {
     private enum value {ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, SKIP, REVERSE, DRAW_TWO, DRAW_FOUR, COLOR }
     private enum color {RED, BLUE, GREEN, YELLOW, WILD}
     private value cardValue;
@@ -13,15 +13,11 @@ public class Card {
         this.cardColor = c;
     }
 
-    public void setCardValue(value cardValue) {
-        this.cardValue = cardValue;
-    } public value getCardValue() {
+    public value getCardValue() {
         return cardValue;
     }
 
-    public void setCardColor(color cardColor) {
-        this.cardColor = cardColor;
-    } public color getCardColor() {
+    public color getCardColor() {
         return cardColor;
     }
 }
