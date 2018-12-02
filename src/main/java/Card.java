@@ -1,11 +1,11 @@
 public final class Card {
-    private enum value {ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, SKIP, REVERSE, DRAW_TWO, DRAW_FOUR, COLOR }
-    private enum color {RED, BLUE, GREEN, YELLOW, WILD}
+    public enum value {ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, SKIP, REVERSE, DRAW_TWO, DRAW_FOUR, COLOR, WILD}
+    public enum color {RED, BLUE, GREEN, YELLOW}
     private value cardValue;
     private color cardColor;
 
     public Card() {
-        this(value.COLOR, color.WILD);
+        this(value.COLOR, color.RED);
     }
 
     public Card(value v, color c) {

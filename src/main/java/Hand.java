@@ -1,5 +1,5 @@
 public class Hand extends CardPile {
    public Hand() {
-       super();
+       super(false);
    } 
 }

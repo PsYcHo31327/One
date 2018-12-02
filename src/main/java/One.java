@@ -1,5 +1,12 @@
 public class One {
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        // Initialize the game
+        Game game = new Game();
+
+        while (true) {
+            if (game.takeTurn()) {
+                break;
+            }
+        }
     }
 }
